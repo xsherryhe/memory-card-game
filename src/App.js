@@ -3,6 +3,8 @@ import './App.css';
 import Cards from './components/Cards';
 import GameOver from './components/GameOver';
 import Scoreboard from './components/Scoreboard';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
   const [score, setScore] = useState(0);
@@ -21,6 +23,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <Scoreboard score={score} best={best} />
       <Cards
         updateScore={updateScore}
@@ -28,6 +31,7 @@ function App() {
         disabled={gameOver}
       />
       {gameOver && <GameOver win={gameOver.win} resetGame={resetGame} />}
+      <Footer />
     </div>
   );
 }

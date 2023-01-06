@@ -1,0 +1,9 @@
+.card {
+  background-color: white;
+}
+
+.card img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}

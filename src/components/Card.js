@@ -1,7 +1,10 @@
-export default function Card({ content, disabled, handleClick }) {
+import '../styles/Card.css';
+
+export default function Card({ image, label, disabled, handleClick }) {
   return (
-    <button onClick={handleClick} disabled={disabled}>
-      {content}
+    <button className="card" onClick={handleClick} disabled={disabled}>
+      <img src={image} alt="" />
+      {label}
     </button>
   );
 }
