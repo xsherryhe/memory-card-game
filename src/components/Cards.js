@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import '../styles/Cards.css';
 
 import astronauts from '../images/astronauts.png';
 import bigBang from '../images/big-bang.png';
@@ -69,7 +70,7 @@ export default function Cards({ updateScore, setGameOver, disabled = false }) {
   }
 
   return (
-    <div>
+    <div className="cards">
       {order.map((i) => {
         const { image, label } = cards.current[i];
         return (
