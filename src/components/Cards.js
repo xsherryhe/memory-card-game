@@ -1,7 +1,12 @@
 import { useRef, useState } from 'react';
 import Card from './Card';
 
-export default function Cards({ length = 12, setScore, resetScore }) {
+export default function Cards({
+  length = 12,
+  updateScore,
+  setGameOver,
+  disabled = false,
+}) {
   const [order, setOrder] = useState([...new Array(length)].map((_, i) => i));
 
   const allUnclicked = [...new Array(length)].map(() => false);
@@ -19,16 +24,25 @@ export default function Cards({ length = 12, setScore, resetScore }) {
     setOrder(newOrder);
   }
 
+  function endGame(win = false) {
+    setGameOver({ win });
+    setClicked([...allUnclicked]);
+  }
+
   function handleCardClick(i) {
     return function () {
-      if (clicked[i]) {
-        resetScore();
-        setClicked([...allUnclicked]);
-      } else {
-        setClicked([...clicked.slice(0, i), true, ...clicked.slice(i + 1)]);
-        setScore((score) => score + 1);
-        randomizeOrder();
-      }
+      if (clicked[i]) return endGame(false);
+
+      updateScore((score) => score + 1);
+      const newClicked = [
+        ...clicked.slice(0, i),
+        true,
+        ...clicked.slice(i + 1),
+      ];
+      if (newClicked.every((card) => card)) return endGame(true);
+
+      setClicked(newClicked);
+      randomizeOrder();
     };
   }
 
@@ -39,6 +53,7 @@ export default function Cards({ length = 12, setScore, resetScore }) {
           key={i}
           content={cards.current[i]}
           handleClick={handleCardClick(i)}
+          disabled={disabled}
         />
       ))}
     </div>
