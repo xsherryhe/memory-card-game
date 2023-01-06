@@ -1,0 +1,11 @@
+App
+-Game over
+  -Reset game button
+-Scoreboard
+  -Current Score
+  -Best Score
+-Cards
+  -(randomize order function)
+  -Card (12)
+    -Image
+    -Label
