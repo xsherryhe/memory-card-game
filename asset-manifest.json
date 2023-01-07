@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/memory-card-game/static/css/main.dda196d7.css",
+    "main.js": "/memory-card-game/static/js/main.18d89f51.js",
+    "static/media/aliens.gif": "/memory-card-game/static/media/aliens.850048df4e1ae97c708f.gif",
+    "static/media/spaceships.png": "/memory-card-game/static/media/spaceships.ea2b77b1f31ce5191ed0.png",
+    "static/media/stars.png": "/memory-card-game/static/media/stars.8eb660eac3abc4ab2347.png",
+    "static/media/donuts.gif": "/memory-card-game/static/media/donuts.b9252ef45dce6176369f.gif",
+    "static/media/entropy.png": "/memory-card-game/static/media/entropy.b5e25199daec411f8788.png",
+    "static/media/milky-way.png": "/memory-card-game/static/media/milky-way.dfae6a5bcb64babc6333.png",
+    "static/media/cluster.png": "/memory-card-game/static/media/cluster.36046306bff248aacd9f.png",
+    "static/media/galaxy.png": "/memory-card-game/static/media/galaxy.00fc8b0768e2250e2ad6.png",
+    "static/media/astronauts.png": "/memory-card-game/static/media/astronauts.0ddadaa9ca4258f9ef7f.png",
+    "static/media/comets.png": "/memory-card-game/static/media/comets.2f318e7943c973b6f9a4.png",
+    "static/media/planets.png": "/memory-card-game/static/media/planets.0852ef0f6be4dd95f6f8.png",
+    "static/media/big-bang.png": "/memory-card-game/static/media/big-bang.2b74156927f7e38b9aa3.png",
+    "static/media/solar.png": "/memory-card-game/static/media/solar.50c97b869f7470dddb5c.png",
+    "static/media/space-background.png": "/memory-card-game/static/media/space-background.1eb858ba92fb81f49828.png",
+    "static/media/black-hole.png": "/memory-card-game/static/media/black-hole.cd08e55692a74006db35.png",
+    "index.html": "/memory-card-game/index.html",
+    "main.dda196d7.css.map": "/memory-card-game/static/css/main.dda196d7.css.map",
+    "main.18d89f51.js.map": "/memory-card-game/static/js/main.18d89f51.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dda196d7.css",
+    "static/js/main.18d89f51.js"
+  ]
+}
