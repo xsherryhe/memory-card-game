@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/memory-card-game/static/css/main.dda196d7.css",
-    "main.js": "/memory-card-game/static/js/main.18d89f51.js",
+    "main.css": "/memory-card-game/static/css/main.f04bee3a.css",
+    "main.js": "/memory-card-game/static/js/main.36250b61.js",
     "static/media/aliens.gif": "/memory-card-game/static/media/aliens.850048df4e1ae97c708f.gif",
     "static/media/spaceships.png": "/memory-card-game/static/media/spaceships.ea2b77b1f31ce5191ed0.png",
     "static/media/stars.png": "/memory-card-game/static/media/stars.8eb660eac3abc4ab2347.png",
@@ -18,11 +18,11 @@
     "static/media/space-background.png": "/memory-card-game/static/media/space-background.1eb858ba92fb81f49828.png",
     "static/media/black-hole.png": "/memory-card-game/static/media/black-hole.cd08e55692a74006db35.png",
     "index.html": "/memory-card-game/index.html",
-    "main.dda196d7.css.map": "/memory-card-game/static/css/main.dda196d7.css.map",
-    "main.18d89f51.js.map": "/memory-card-game/static/js/main.18d89f51.js.map"
+    "main.f04bee3a.css.map": "/memory-card-game/static/css/main.f04bee3a.css.map",
+    "main.36250b61.js.map": "/memory-card-game/static/js/main.36250b61.js.map"
   },
   "entrypoints": [
-    "static/css/main.dda196d7.css",
-    "static/js/main.18d89f51.js"
+    "static/css/main.f04bee3a.css",
+    "static/js/main.36250b61.js"
   ]
 }
