@@ -9,6 +9,7 @@
 }
 
 .game-over .display {
+  max-width: 90vw;
   position: fixed;
   top: 10vh;
   background-color: white;
@@ -23,7 +24,18 @@
 .game-over img {
   border: 2px solid var(--font-color);
   border-radius: 0.2rem;
+  max-width: 80vw;
   width: 50vh;
   height: 50vh;
   object-fit: cover;
+}
+
+@media (max-height: 475px) {
+  .game-over {
+    font-size: 3vh;
+  }
+
+  .game-over .display {
+    gap: 1vh;
+  }
 }

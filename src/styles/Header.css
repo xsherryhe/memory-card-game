@@ -1,11 +1,12 @@
 header {
   background-color: white;
-  padding: 2rem 0;
-  margin-top: 1rem;
+  padding: 2rem 1rem;
   border-top: 5px dotted var(--dark-background-color);
   border-bottom: 5px dotted var(--dark-background-color);
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 header svg {
@@ -15,11 +16,32 @@ header svg {
   stroke-width: 1rem;
 }
 
-header svg:last-child {
+header svg:nth-child(even) {
   transform: rotate(-90deg);
 }
 
-h1, h2 {
-  margin: 0;
-  font-weight: 500;
+header .narrow {
+  display: none;
+}
+
+header .narrow svg {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 0.5rem;
+    flex-direction: column;
+  }
+
+  header .wide {
+    display: none;
+  }
+
+  header .narrow {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
 }

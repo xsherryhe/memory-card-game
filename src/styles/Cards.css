@@ -4,3 +4,23 @@
   grid-template: repeat(4, 1fr) / repeat(3, 1fr);
   gap: 1rem;
 }
+
+@media (max-width: 900px) {
+  .cards {
+    padding: 1rem;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template: repeat(6, 1fr) / repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .cards {
+    padding: 1rem 0.5rem;
+  }
+}

@@ -29,3 +29,27 @@
   width: 7.75rem;
   height: 7.75rem;
 }
+
+@media (max-width: 685px) {
+  .card {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .card {
+    font-size: 1rem;
+    min-height: 12.5rem;
+  }
+
+  .card:hover img {
+    width: 7.25rem;
+    height: 7.25rem;
+  }
+}
