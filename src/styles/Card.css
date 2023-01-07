@@ -1,9 +1,8 @@
 .card {
-  min-height: 12rem;
+  min-height: 10rem;
   background-color: white;
   border: 5px dotted var(--dark-background-color);
   padding: 0.5rem;
-  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,9 +13,15 @@
 .card img {
   border: 2px solid var(--dark-background-color);
   border-radius: 25%;
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
   object-fit: cover;
+}
+
+.card .label {
+  min-height: 2.3rem;
+  display: flex;
+  align-items: center;
 }
 
 .card:hover {
@@ -26,30 +31,22 @@
 
 .card:hover img {
   border: 2px solid var(--font-color);
-  width: 7.75rem;
-  height: 7.75rem;
+  width: 5.5rem;
+  height: 5.5rem;
 }
 
-@media (max-width: 685px) {
+@media (max-width: 375px) {
   .card {
-    font-size: 1rem;
+    padding: 0.25rem;
   }
-}
 
-@media (max-width: 600px) {
-  .card {
-    font-size: 1.25rem;
-  }
-}
-
-@media (max-width: 420px) {
-  .card {
-    font-size: 1rem;
-    min-height: 12.5rem;
+  .card img {
+    width: 4rem;
+    height: 4rem;
   }
 
   .card:hover img {
-    width: 7.25rem;
-    height: 7.25rem;
+    width: 4.25rem;
+    height: 4.25rem;
   }
 }

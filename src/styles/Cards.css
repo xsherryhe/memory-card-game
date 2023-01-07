@@ -1,26 +1,19 @@
 .cards {
-  padding: 1rem 3rem;
+  padding: 0.5rem 1rem;
   display: grid;
-  grid-template: repeat(4, 1fr) / repeat(3, 1fr);
-  gap: 1rem;
+  grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+  gap: 0.5rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 850px) {
   .cards {
-    padding: 1rem;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    padding: 0.5rem;
   }
 }
 
-
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .cards {
-    grid-template: repeat(6, 1fr) / repeat(2, 1fr);
-    gap: 0.5rem;
-  }
-}
-
-@media (max-width: 420px) {
-  .cards {
-    padding: 1rem 0.5rem;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
   }
 }
