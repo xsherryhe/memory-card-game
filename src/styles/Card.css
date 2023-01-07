@@ -1,9 +1,9 @@
 .card {
   min-height: 12rem;
   background-color: white;
-  border-radius: 0.2rem;
+  border: 5px dotted var(--dark-background-color);
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +12,7 @@
 }
 
 .card img {
+  border: 2px solid var(--dark-background-color);
   border-radius: 25%;
   width: 7rem;
   height: 7rem;
@@ -19,11 +20,12 @@
 }
 
 .card:hover {
-  background-color: lightgray;
+  border: 5px dotted var(--font-color);
+  background-color: white;
 }
 
 .card:hover img {
-  border: solid 2px gray;
+  border: 2px solid var(--font-color);
   width: 7.75rem;
   height: 7.75rem;
 }

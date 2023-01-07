@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+import './styles/App.css';
 import Cards from './components/Cards';
 import GameOver from './components/GameOver';
 import Scoreboard from './components/Scoreboard';

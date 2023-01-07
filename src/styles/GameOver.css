@@ -5,11 +5,12 @@
   min-height: 100%;
   min-width: 100vw;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .game-over .display {
+  position: fixed;
+  top: 10vh;
   background-color: white;
   border-radius: 0.2rem;
   padding: 1rem;
@@ -20,6 +21,9 @@
 }
 
 .game-over img {
-  width: 20rem;
-  height: 20rem;
+  border: 2px solid var(--font-color);
+  border-radius: 0.2rem;
+  width: 50vh;
+  height: 50vh;
+  object-fit: cover;
 }

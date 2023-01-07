@@ -12,7 +12,7 @@ export default function GameOver({ win = false, resetGame }) {
         <div>
           {win
             ? 'You got all the donuts!'
-            : 'You clicked on the same donut twice! Abducted by aliens...'}
+            : 'You clicked the same donut twice! Abducted by aliens...'}
         </div>
         <button onClick={resetGame}>Play Again</button>
       </div>
